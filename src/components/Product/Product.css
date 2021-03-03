@@ -11,11 +11,15 @@
 .info-container{
     margin-top: 10px;
 }
-.info-container a{
+.info-container h4{
     text-decoration: none;
     font-weight: 400;
     font-size: 20px;
     color: blue;
+}
+.info-container h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 .info-container button{
     padding: 5px;
