@@ -5,7 +5,7 @@ import './Product.css'
 import { Link } from 'react-router-dom';
 
 const Product = (props) => {
-    console.log(props)
+    // console.log(props)
     const {img,key,name,category,seller,wholePrice,stock} = props.product
     return (
         <div className="pro-container">
