@@ -1,31 +1,24 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import Shop from './components/Shop/Shop';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import Review from './components/Review/Review';
-import Inventory from './components/Inventory/Inventory';
-import NotFound from './components/NotFound/NotFound';
-import Detail from './components/Detail/Detail';
-
-
+import React from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Shop from "./components/Shop/Shop";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Review from "./components/Review/Review";
+import Inventory from "./components/Inventory/Inventory";
+import NotFound from "./components/NotFound/NotFound";
+import Detail from "./components/Detail/Detail";
 
 function App() {
   return (
     <div>
-        <Header></Header>
+      <Header></Header>
       <Router>
         <Switch>
           <Route path="/shop">
-          <Shop></Shop>
+            <Shop></Shop>
           </Route>
           <Route path="/order">
-          <Review></Review>
+            <Review></Review>
           </Route>
           <Route path="/Manage">
             <Inventory></Inventory>
@@ -34,10 +27,10 @@ function App() {
             <Shop></Shop>
           </Route>
           <Route path="/product/:productKey">
-          <Detail></Detail>
+            <Detail></Detail>
           </Route>
           <Route path="*">
-           <NotFound></NotFound>
+            <NotFound></NotFound>
           </Route>
         </Switch>
       </Router>
