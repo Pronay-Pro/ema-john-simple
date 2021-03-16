@@ -19,3 +19,6 @@
 .header nav a:hover{
     background-color: gray;
 }
+.btn{
+    width: 100px;
+}

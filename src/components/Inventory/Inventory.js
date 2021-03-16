@@ -1,9 +1,10 @@
 import React from 'react';
+import LogIn from '../LogIn/LogIn';
 
 const Inventory = () => {
     return (
         <div>
-            <h1>Developer sleeping</h1>
+             <h1>Waiting for Inventory</h1>
         </div>
     );
 };
