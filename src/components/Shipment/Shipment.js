@@ -15,7 +15,7 @@ const Shipment = () => {
       shipment: data,
       time: new Date(),
     };
-    fetch(`http://localhost:5000/addOrders`,{
+    fetch(`https://gentle-peak-79048.herokuapp.com/addOrders`,{
         method: 'POST',
         headers: {'Content-Type' : 'application/json'},
         body: JSON.stringify(orderDetails)

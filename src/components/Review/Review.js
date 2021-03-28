@@ -29,7 +29,7 @@ const Review = () => {
     const savedCart = getDatabaseCart();
     const productKey = Object.keys(savedCart);
 
-    fetch(`http://localhost:5000/productByKeys`,{
+    fetch(`https://gentle-peak-79048.herokuapp.com/productByKeys`,{
       method: 'POST',
       headers:{'Content-Type': 'application/json'},
       body: JSON.stringify(productKey)

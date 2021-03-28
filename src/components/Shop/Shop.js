@@ -15,7 +15,7 @@ const Shop = () => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products`)
+    fetch(`https://gentle-peak-79048.herokuapp.com/products`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);
@@ -23,7 +23,7 @@ const Shop = () => {
   useEffect(() => {
     const saveCart = getDatabaseCart();
     const productKeys = Object.keys(saveCart);
-    fetch(`http://localhost:5000/productByKeys`, {
+    fetch(`https://gentle-peak-79048.herokuapp.com/productByKeys`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(productKeys),
